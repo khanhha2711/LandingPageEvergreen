@@ -121,41 +121,51 @@ export default function TrangChu() {
             "hidden lg:block absolute inset-0 z-10 bg-linear-to-r from-white from-0% via-white via-45% to-transparent to-80%",
           )}
         />
+
         <div className="relative z-20 h-full mx-auto flex flex-col justify-center px-8 md:px-20">
           <div className="flex justify-center items-center shadow-lg shadow-primary/20 text-primary border lg:border-primary/50 lg:bg-primary/10 bg-white w-fit px-2 py-1 rounded-xl text-sm md:text-base font-semibold mb-4 pr-4">
             <Dot className="text-primary" size={30} />
             <p>Fastest & Secure</p>
           </div>
-          <h1 className="text-2xl lg:text-6xl md:text-4xl font-bold tracking-tight text-slate-900 leading-tight ">
+          <h1 className="text-2xl lg:text-6xl md:text-4xl font-bold tracking-tight text-slate-900 leading-tight">
             Logistics Solution
           </h1>
-          <div className="mt-4 lg:w-60 w-20 h-1 bg-linear-to-r from-primary via-primary/40  to-white"></div>
-          <p className="max-w-lg mt-4 text-sm lg:text-base leading-relaxed font-normal ">
+          <div className="mt-4 lg:w-60 w-20 h-1 bg-linear-to-r from-primary via-primary/40 to-white"></div>
+          <p className="max-w-lg mt-4 text-sm lg:text-base leading-relaxed font-normal">
             Dịch vụ thông quan hải quan, kiểm hóa hàng hóa và vận chuyển chuyên
             nghiệp cho thương mại quốc tế liền mạch.
           </p>
         </div>
-        {/* logisticsStats */}
-        <div className="absolute flex gap-10 bottom-0 left-1/2 -translate-x-1/2 translate-y-2/3 z-30 w-full max-w-6xl px-4 md:px-8">
-          {logisticsStats.map((stat, index) => (
-            <Card key={index} className={cn("flex-1 shadow-xl ")}>
-              <div className="flex flex-col justify-center items-center gap-2 ">
-                <div>{stat.icon}</div>
-                <h1 className="text-xl md:text-3xl text-primary ">
-                  {stat.value}
-                </h1>
-                <p className="text-sm md:text-base text-gray-500 font-medium text-center">
-                  {stat.label}
-                </p>
-              </div>
-            </Card>
-          ))}
+
+        <div className="absolute mt-6 md:bottom-0 md:left-1/2 md:-translate-x-1/2 md:translate-y-1/2 sm:z-30 w-full max-w-6xl px-4 sm:px-6 md:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 w-full">
+            {logisticsStats.map((stat, index) => (
+              <Card
+                key={index}
+                className={cn(
+                  "shadow-xl border border-slate-100 bg-white p-4 md:p-6",
+                )}
+              >
+                <div className="flex flex-col justify-center items-center text-center gap-1 md:gap-2">
+                  <div className="text-primary text-xl md:text-2xl">
+                    {stat.icon}
+                  </div>
+                  <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-primary tracking-tight">
+                    {stat.value}
+                  </h2>
+                  <p className="text-xs sm:text-sm md:text-base text-gray-500 font-medium leading-tight max-w-[140px] md:max-w-none">
+                    {stat.label}
+                  </p>
+                </div>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
 
       {/* Gioi thieu */}
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div className="w-full max-w-7xl mx-auto md:mt-30 mt-70  pb-20 md:px-8 px-12 lg:px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
           <div className="relative lg:col-span-5 w-full h-[350px] sm:h-[450px] ">
             <Image
               src="/vanChuyen.png"
