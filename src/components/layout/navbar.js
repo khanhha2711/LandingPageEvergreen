@@ -75,7 +75,7 @@ export default function Navbar() {
           >
             <Link href={PATH.PUBLIC.LIENHE} className="p-2 rounded-2xl">
               <Phone size={16} className="animate-pulse " />
-              <span>0332147382</span>
+              <span>0978152233</span>
             </Link>
           </Button>
         </div>
@@ -126,7 +126,7 @@ export default function Navbar() {
                 >
                   <Link href={PATH.PUBLIC.LIENHE}>
                     <Phone size={18} />
-                    <span>0332147382</span>
+                    <span>0978152233</span>
                   </Link>
                 </Button>
               </div>

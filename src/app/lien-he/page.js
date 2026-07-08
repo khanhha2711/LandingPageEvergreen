@@ -8,12 +8,12 @@ export default function LienHe() {
     {
       icon: <MapPin className="text-primary w-5 h-5" />,
       title: "Địa chỉ văn phòng",
-      content: "15 Thạch Thang, Quận Hải Châu, TP. Đà Nẵng, Việt Nam",
+      content: "B15/11 Đường Trung Mỹ Tây 13, Phường Trung Mỹ Tây, Thành phố Hồ Chí Minh, Việt Nam",
     },
     {
       icon: <Phone className="text-primary w-5 h-5" />,
       title: "Hotline hỗ trợ",
-      content: "+84 (236) 3123-4567",
+      content: "+84 978-152-233",
     },
     {
       icon: <Mail className="text-primary w-5 h-5" />,
