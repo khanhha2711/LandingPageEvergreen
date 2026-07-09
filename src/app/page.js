@@ -207,7 +207,12 @@ export default function TrangChu() {
 
             <div className="mt-8">
               <button className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-accent text-white font-medium rounded-xl text-sm transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer">
-                <p>Khám phá thêm</p>
+                <Link
+                    href={PATH.PUBLIC.GIOITHIEU}
+                    className="transition-opacity hover:opacity-90 shrink-0"
+                >
+                 <p>Khám phá thêm</p>
+                </Link>
                 <ArrowRight size={15} />
               </button>
             </div>
